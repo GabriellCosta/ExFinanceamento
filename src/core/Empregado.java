@@ -9,7 +9,8 @@ public abstract class Empregado {
 	}
 
 	public void printPlay() {
-
+		System.out.println("Nome: " + this.nome);
+		System.out.println("Valor: " + getPlay());
 	}
 
 	public abstract double getPlay();

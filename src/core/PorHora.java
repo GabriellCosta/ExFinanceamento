@@ -1,6 +1,6 @@
 package core;
 
-public class PorHora extends Empregado implements Commission {
+public class PorHora extends Empregado{
 
 	private double valorHora;
 	private int numHora;
@@ -10,16 +10,10 @@ public class PorHora extends Empregado implements Commission {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public void setVendas(double sales) {
-		// TODO Auto-generated method stub
-
-	}
 
 	@Override
 	public double getPlay() {
-		// TODO Auto-generated method stub
-		return 0;
+		return getValorHora() * getNumHora();
 	}
 
 	public double getValorHora() {

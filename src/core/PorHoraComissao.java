@@ -1,6 +1,11 @@
 package core;
 
-public class PorHoraComissao {
+public class PorHoraComissao  extends PorHora implements Commission {
+
+	public PorHoraComissao(String nome) {
+		super(nome);
+		// TODO Auto-generated constructor stub
+	}
 
 	private double sales;
 
@@ -8,12 +13,8 @@ public class PorHoraComissao {
 		this.sales = sales;
 	}
 
-	public void printPlay() {
-
-	}
-
 	public double getPlay() {
-		return 0;
+		return this.getNumHora() * this.getValorHora() + sales * Commission.COMMISION_RATE;
 	}
 
 }
